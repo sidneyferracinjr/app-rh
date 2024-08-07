@@ -1,10 +1,17 @@
-HELP.md
+# Arquivos e diretórios de construção
 target/
-!.mvn/wrapper/maven-wrapper.jar
+build/
+*.tmp
+*.bak
+
+# Arquivos e diretórios gerados por sistemas de construção
 !**/src/main/**/target/
 !**/src/test/**/target/
+!**/src/main/**/build/
+!**/src/test/**/build/
 
-### STS ###
+# Arquivos gerados por IDEs
+## STS
 .apt_generated
 .classpath
 .factorypath
@@ -13,21 +20,70 @@ target/
 .springBeans
 .sts4-cache
 
-### IntelliJ IDEA ###
-.idea
+## IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
 
-### NetBeans ###
+## NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### VS Code ###
+## VS Code
 .vscode/
+
+## Outros
+*.sublime-workspace
+*.sublime-project
+
+# Arquivos de configuração de ferramentas
+## Maven
+*.log
+*.classpath
+*.project
+*.settings/
+*.mvn/
+
+## Gradle
+.gradle/
+build.gradle.kts
+settings.gradle.kts
+
+## Spring Boot
+spring-boot-devtools.properties
+spring-boot-devtools.jar
+
+# Arquivos de configuração de ambiente
+*.env
+
+# Arquivos temporários do sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de backup
+*~
+*.swp
+*.swo
+
+# Arquivos de logs
+*.log
+
+# Arquivos de dependências do npm
+node_modules/
+
+# Arquivos de cache
+.cache/
+
+# Outros arquivos
+*.jar
+*.war
+*.ear
+*.class
+
+# Arquivos de configuração do Docker
+.dockerignore
+Dockerfile
