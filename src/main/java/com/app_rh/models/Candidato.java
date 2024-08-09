@@ -1,5 +1,6 @@
 package com.app_rh.models;
 
+import java.io.Serializable;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -9,7 +10,7 @@ import jakarta.persistence.ManyToOne;
 import jakarta.validation.constraints.NotEmpty;
 
 @Entity
-public class Candidato {
+public class Candidato implements Serializable {
 	private static final long serialVersionUID = 1L;
 
 	@Id
