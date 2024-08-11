@@ -1,4 +1,4 @@
-package com.app_rh.controllers;
+package com.app_rh.repository;
 
 import java.util.List;
 import org.springframework.data.jpa.repository.Query;

@@ -1,4 +1,4 @@
-package com.app_rh.repository;
+package com.app_rh.controllers;
 
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,14 +11,18 @@ import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import org.xml.sax.ext.Attributes2Impl;
 
-import com.app_rh.controllers.CandidatoRepository;
 import com.app_rh.models.Candidato;
 import com.app_rh.models.Vaga;
+import com.app_rh.repository.CandidatoRepository;
+import com.app_rh.repository.VagaRepository;
 
 @Controller
 public class VagaController {
 
+	@Autowired
 	private VagaRepository vr;
+	
+	@Autowired
 	private CandidatoRepository cr;
 	
 	// VAGA
