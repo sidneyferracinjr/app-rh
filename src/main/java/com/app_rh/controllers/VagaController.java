@@ -65,7 +65,7 @@ public class VagaController {
 		Iterable<Candidato> candidatos = cr.findByVaga(vaga);
 		mv.addObject("candidatos", candidatos);
 		
-		return null;
+		return mv;
 	}
 	
 	// DELETAR VAGAS
